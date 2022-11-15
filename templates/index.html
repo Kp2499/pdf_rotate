@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    
+</head>
+<body>
+    <h1> Rotate PDF </h1>
+    <form action = "/home" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <br><br>
+         <label for="rot_angle"> Enter the rotation angle. Angles can be: [90,180,270]: </label>
+         <input type="text" id="rot_angle" name="rotation" placeholder="Rotation angle">
+         <br><br>
+         <label for="pages"> Enter the list of pages on which rotation is to be applied; format being: [1,2,3..]: </label>
+         <input type="text" id="pages" name="tgt_pages" placeholder="Page Numbers">
+         <br>
+          <br><br>
+         <input type = "submit"/>
+         <input type = "reset"/>
+         <br><br> 
+
+      </form>  
+    
+</body>
+</html>
